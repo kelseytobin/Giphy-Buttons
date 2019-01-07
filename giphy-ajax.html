@@ -2,36 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Watch Me Giphy</title>
+    <meta charset="utf-8">
+    <title>Watch Me Giphy</title>
 </head>
 
 <body>
     <div id="button-display">
     </div>
-    
+
     <div id="gif-display">
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript">
-
-    //create topics array
-    var topics = ["Madlib", "Anderson Paak", "Phife Dawg", "Q-tip", "Freddie Gibbs"];
+    <script src="assets/app.js"></script>
+       
     
-    //function loops through topics array, creates button, and appends to page
-    function callCreate() {
-        for (var i = 0; i < topics.length; i++) {
-            var btn = $("<button>");
-            btn.text(topics[i]);
-            $("#button-display").append(btn);
-        }
-    };
-
-    $(document).ready(function() {
-        callCreate();
-    });
-
-
-    </script>
 </body>
+
+</html>

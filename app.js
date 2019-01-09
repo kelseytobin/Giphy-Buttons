@@ -5,7 +5,8 @@
  function callCreate() {
      for (var i = 0; i < topics.length; i++) {
          var btn = $("<button>");
-         btn.addClass("name")
+         btn.addClass("name");
+         btn.addClass("btn btn-primary");
          btn.attr("data-name", topics[i]);
          btn.text(topics[i]);
          $("#button-display").append(btn);
@@ -43,10 +44,10 @@
                      var gifDiv = $("<div>");
                      var rating = results[i].rating;
                      var p = $("<p>").text("Rating: " + rating);
-                     var personImage = $("<img>");
+                     var rapperImage = $("<img>");
                      personImage.attr("src", results[i].images.fixed_height.url);
                      gifDiv.append(p);
-                     gifDiv.append(personImage);
+                     gifDiv.append(rapperImage);
                      $("#gif-display").prepend(gifDiv)
                  }
              })

@@ -4,19 +4,34 @@
 <head>
     <meta charset="utf-8">
     <title>Watch Me Giphy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- button display -->
     <div id="button-display">
     </div>
 
+    <!-- primary container -->
     <div id="gif-display">
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/app.js"></script>
-       
-    
+    <!-- user input form -->
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+        <form id="gif-form" role="form">
+            <div class="form-group">
+                <label form= "rapper-input">Add your favorite Rapper</label>
+                <input type="text" id="artist-input">
+            </div>
+            <input id="addGif" type="submit" value="Submit" class="btn btn-primary">
+        </form>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/app.js"></script>
+
+
 </body>
 
 </html>

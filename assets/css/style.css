@@ -3,6 +3,11 @@ body {
     
 }
 
+p {
+    color: white;
+    font-weight: bolder;
+}
+
 label {
     padding-left: 10px;
     padding-right: 10px;
@@ -28,7 +33,7 @@ label {
     border-color: black;
 }
 
-#rapper-input.capitalize {
-    text-transform: capitalize;
-}
+/* #rapper-input.capitalize {
+    text-transform: capitalize; 
+} */
 

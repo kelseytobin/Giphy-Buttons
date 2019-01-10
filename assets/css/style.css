@@ -19,3 +19,13 @@ label {
     
 }
 
+.btn-primary {
+    border-color: blanchedalmond;
+}
+
+.btn-primary:hover {
+    background-color: black;
+    border-color: black;
+}
+
+

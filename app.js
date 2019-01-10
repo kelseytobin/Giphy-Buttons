@@ -20,9 +20,6 @@
      //event listener for buttons appended to html
      $("button").on("click", function () {
 
-        // //empty gifs from previous button click
-        $("#gif-display").empty();
-
         //create variable to include inside url query- this refers to button that was clicked
         var person = $(this).attr("data-name");
 
@@ -38,6 +35,8 @@
 
             //after data comes back from the API
             .then(function (response) {
+                $("#gif-display").empty(); //emptys gifs from previous gif button click
+                
                 var results = response.data;
 
                 for (var i = 0; i < results.length; i++) {
@@ -57,7 +56,7 @@
                     $("#gif-display").prepend(gifDiv)
                 }
 
-            // $("#rapper-")
+           
 
             });
     });
@@ -76,14 +75,12 @@
      };
  };
 
- //displays static gifs, no animated click functionality yet
+
 
 
 
  //execute
  $(document).ready(function () {
-    // displayGifs();
-    // changeGifState();
 
     $("#add-rapper").on("click", function(event){
         event.preventDefault();
@@ -100,7 +97,7 @@
     });
     
     $(document).on("click", ".rapper-btn", displayGifs);
-
+    
     renderButtons();
 
     $(document).on("click", ".gif", changeGifState);

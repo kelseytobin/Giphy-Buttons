@@ -45,7 +45,12 @@
                     var rating = results[i].rating;
                     var p = $("<p>").text("Rating: " + rating);
                     var personImage = $("<img>");
-                    personImage.attr("src", results[i].images.fixed_height.url);
+                    var animatedGif = results[i].images.fixed_height.url;
+                    var staticGif = results[i].images.fixed_height_still.url;
+                    personImage.attr("src", staticGif);
+                    personImage.attr("data-state", "still");
+                    personImage.attr("data-still", staticGif);
+                    personImage.attr("data-animate", animatedGif);
                     gifDiv.append(p);
                     gifDiv.append(personImage);
                     $("#gif-display").prepend(gifDiv)
@@ -54,10 +59,26 @@
     });
  };
 
+ //function to change gif image source to animated or static
+ function changeGifState() {
+     var state = $(this).attr("data-state");
+     if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+      } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+  
+     };
+ };
+
+
 
  //execute
  $(document).ready(function () {
-    
+    // displayGifs();
+    // changeGifState();
+
     $("#add-rapper").on("click", function(event){
         event.preventDefault();
         
@@ -75,5 +96,7 @@
     $(document).on("click", ".rapper-btn", displayGifs);
 
     renderButtons();
+
+    $(document).on("click", ".rapper-btn", changeGifState);
    
  });

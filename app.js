@@ -85,9 +85,11 @@
     $("#add-rapper").on("click", function(event){
         event.preventDefault();
         
-        var rapper = $("#rapper-input").val().trim().toUpperCase(); //uppercase not working yet
+        var rapper = $("#rapper-input").val().trim();
         
-        topics.push(rapper);
+        var rapperCapitalized = rapper.charAt(0).toUpperCase() + rapper.slice(1); 
+        
+        topics.push(rapperCapitalized);
 
         $("#rapper-input").val("");
         

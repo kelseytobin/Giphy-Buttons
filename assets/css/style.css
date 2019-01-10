@@ -28,4 +28,7 @@ label {
     border-color: black;
 }
 
+#rapper-input.capitalize {
+    text-transform: capitalize;
+}
 

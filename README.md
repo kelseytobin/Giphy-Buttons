@@ -5,11 +5,11 @@ Click on one of the already established artist searchs or type your favorite hip
 
 ## Built With
 
-* Javascript
+* JavaScript
 * HTML
 * Bootstrap
 * CSS 
-* Jquery
+* jQuery
 
 ### Authors
 * Kelsey Tobin

@@ -12,7 +12,7 @@ Click on one of the already established artist searchs or type your favorite hip
 * jQuery
 
 ### Preview
-![GitHub Logo](/images/gif.png)
+![App Preview](/assets/images/gif.png)
 
 ### Authors
 * Kelsey Tobin

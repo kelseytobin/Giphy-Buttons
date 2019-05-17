@@ -1,6 +1,7 @@
 # Giphy-Buttons
 
-Employs AJAX method to successfuly call the GIPHY's API and create a dynamic web page that populates wtih Gifs of the user's choice, correlating with the set theme. Makes use of Javascript and Jquery to dynmically update the HTML content of the page.
+## Description
+Click on one of the already established artist searchs or type your favorite hip hop artist into the search bar and watch as their most popular gifs append to the page. Click on the gifs to play and pause them. 
 
 ## Built With
 
